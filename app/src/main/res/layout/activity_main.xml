@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#efeded"
+    android:layout_marginRight="@dimen/dp_25"
+    android:layout_marginLeft="@dimen/dp_25"
+    tools:context=".MainActivity">
+
+  <ImageView
+      android:layout_width="@dimen/dp_200"
+      android:layout_height="@dimen/dp_200"
+      android:id="@+id/img_head"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="@dimen/dp_50"
+      android:src="@drawable/a2"/>
+
+    <EditText
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入账号"
+        android:id="@+id/ed_phone"/>
+
+    <EditText
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_password"
+        android:hint="请输入密码"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_zhuce"
+            android:text="点击快速注册"/>
+    </LinearLayout>
+    <Button
+        android:background="@drawable/btnshape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_18"
+        android:id="@+id/btn_login"
+        android:textColor="#fffdfd"
+        android:text="登录"/>
+
+
+
+</LinearLayout>
